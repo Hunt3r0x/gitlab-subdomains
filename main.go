@@ -323,7 +323,7 @@ func cleanSubdomain(sub []byte) string {
 
 
 func main() {
-
+	banner()
 	var token string
 	var outputFileName string
 
@@ -379,12 +379,6 @@ func main() {
 	config.search = "%22" + strings.ReplaceAll(url.QueryEscape(config.search), "-", "%2D") + "%22"
 
 	parseToken( token )
-
-	if config.debug {
-		banner()
-	} else {
-		banner()
-	}
 
 	var n_token = len(config.tokens)
 	if n_token == 0 {
