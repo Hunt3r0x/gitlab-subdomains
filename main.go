@@ -441,6 +441,8 @@ func inArray(str string, array []string) bool {
 	}
 	return false
 }
+
+
 func inArrayKey(str string, array map[string]interface {}) bool {
 	for i,_ := range array {
 		if i == str {
